@@ -6,7 +6,7 @@ for(var i = 3; i < 10000000; i++){
 	var length = numStr.length;
 	var sumI = 0;
 	for(var digit = 0; digit < length; digit++){
-		if(sumI > i){break;} , break loop when whent over
+		if(sumI > i){break;} // break loop when whent over
 		sumI += factorial[parseInt(numStr[digit])];
 	}
 
