@@ -1,27 +1,19 @@
+var factorial = [1,1,2,6,24,120,720,5040,40320,362880];
+var sum = 0;
 
-function factorialize(number){
-    output = [];
-    sNumber = number.toString();
-    sum=0;
+for(var i = 3; i < 10000000; i++){
+	var numStr = String(i);
+	var length = numStr.length;
+	var sumI = 0;
+	for(var digit = 0; digit < length; digit++){
+		if(sumI > i){break;} , break loop when whent over
+		sumI += factorial[parseInt(numStr[digit])];
+	}
 
-for (var i = 0, len = sNumber.length; i < len; i += 1) {
-    output.push(+sNumber.charAt(i));
-}
-console.log(output)
-for(let num in output){
-        var result = 1;
-        for (var i = 2; i <= num; i++){ 
-        result *=i
-        
-         }
-         sum +=result
-        
-        }
-     
-  
-console.log(sum)
+	if(sumI == i){
+		console.log(i);
+		sum += sumI;
+	}
 }
 
-factorialize(245)
-
-
+console.log(sum);
