@@ -1,0 +1,3 @@
+//first split the input number  and push it into the array
+//then iteratively  loop though each number in the array
+//then do the factorial of each number and increment the sum each time
