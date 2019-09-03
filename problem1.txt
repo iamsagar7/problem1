@@ -1,3 +1,5 @@
-//first split the input number  and push it into the array
-//then iteratively  loop though each number in the array
-//then do the factorial of each number and increment the sum each time
+// What is the upper bound of this problem?
+// All 9's create the largest result
+// 9! = 362880
+// 7 * 362880 < 9999999
+// We can place upper limit at 10 million
